@@ -15,6 +15,9 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+set -o errexit -o nounset -o noclobber -o pipefail
+shopt -s nullglob
+
 # List files that are probably SSH keys, filtering out ones that probably aren't.
 FILES_IN_SSH_DIR=$(find ~/.ssh -type f -not -name "*.pub" \
                                        -not -name "known_hosts" \
