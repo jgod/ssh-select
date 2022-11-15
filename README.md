@@ -7,3 +7,6 @@
 ```
 
 Select an SSH key to `ssh-add`.
+
+Copyright Justin Godesky.
+Released under the AGPLv3 License.
